@@ -1,0 +1,21 @@
+{
+  "name": "dsh-embedder",
+  "version": "0.1.0",
+  "description": "DSH 的嵌入服务：把一段文本变成向量（默认走本机 Ollama 的 bge-m3），供向量检索使用",
+  "author": "leolee9086",
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/host.js",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "check": "node --check src/host.js"
+  }
+}
